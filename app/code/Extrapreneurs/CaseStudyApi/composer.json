@@ -1,0 +1,22 @@
+{
+    "name": "extrapreneurs/module-casestudyapi",
+    "description": "",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Kishor Hase",
+            "email": "kishorhase@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Extrapreneurs\\CaseStudyApi\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

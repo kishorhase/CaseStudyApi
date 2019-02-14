@@ -1,0 +1,18 @@
+<h3> Product Information</h3>
+<form action="<?php echo $block->getFormAction() ?>" data-mage-init='{"validation":{}}' method="post">
+    <div>Name            : <input data-validate='{"required":true}' name="product_name" type="text"></div>
+    <div>SKU             : <input data-validate='{"required":true}' name="sku" type="text"></div>
+    <div>Price           : <input data-validate='{"required":true "number":true}' name="price" type="text"></div>
+    <div>Weight          : <input  data-validate='{"required":true, "number":true}'name="weight" type="text"></div>
+    <div>Inventory Stock : <input data-validate='{"required":true "number":true}' name="stock" type="text"></div>
+    <div>Description     : <input data-validate='{"required":true}' name="description" type="text"></div>
+    <div><input type="submit" value="Save Product"></div>
+</form>
+
+<?php
+	$data = $block->saveProduct();
+	if($data){
+		echo "<pre>";
+		print_r($data);
+	}
+?>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="extrapreneurs" sortOrder="999" translate="label">
+			<label>Extrapreneurs</label>
+		</tab>
+		<section id="casestudyapi" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>Case Study API</label>
+			<tab>extrapreneurs</tab>
+			<resource>Extrapreneurs_CaseStudyApi::config_extrapreneurs_casestudyapi</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Configuration</label>
+				<field id="admin_username" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Admin User Name</label>
+					<comment>Please enter admin user name</comment>
+				</field>
+				<field id="admin_password" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>Admin Password</label>
+					<comment>Please enter admin password</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
